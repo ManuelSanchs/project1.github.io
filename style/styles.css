@@ -1,0 +1,528 @@
+/* This will effect everything from 0 to 576px */
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@400;500;600&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+header {
+  background-color: #043E75;
+  color: #fff;
+  padding: .62rem 0;
+  box-shadow: .25rem .25rem .25rem .25rem #a8a7a7;
+}
+header img{
+  max-height: 3rem;
+}
+
+.headerpic{
+  width: 100%;
+max-height: 12.5rem;
+margin: 2rem 0;
+}
+
+h1 {
+  margin: 0;
+  display: inline;
+}
+
+
+h2{
+  font-family: 'Faustina', serif;
+  font-weight: 600;
+  color: #043E75;
+  justify-content: center;
+  margin: 0;
+}
+
+p{
+  font-family: 'Faustina', serif;
+  font-weight: 500;
+  color: #fff;
+
+}
+
+a {
+  font-family: 'Faustina', serif;
+  font-weight: 600;
+  color: #fff;
+  
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message img {
+  width: 100%;
+  max-height: 16.68rem;
+  margin: 2rem 0;
+  border-radius: .5rem;
+  box-shadow: .25rem .25rem .25rem .25rem #a8a7a7;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 1.25rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sandwich-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.line {
+  width: 1.87rem;
+  height: .18rem;
+  background-color: #2386E4;
+  margin: .18rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-end-end-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+
+.line:nth-child(2){
+  width: 1.56rem;
+  height: .18rem;
+  background-color: #2386E4;
+  margin: .18rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-end-end-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+
+}
+.line:nth-child(3){
+  width: 1.25rem;
+  height: .18rem;
+  background-color: #2386E4;
+  margin: .18rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-end-end-radius: 3rem;
+  
+ 
+
+}
+
+.menu {
+  display: none;
+  
+ 
+}
+
+
+.menu a:hover{
+
+  width:16.81rem;
+  padding: .7rem;
+  height: 6.5rem;
+  background: rgb(4,62,117);
+background: linear-gradient(180deg, rgba(4,62,117,1) 0%, rgba(1,44,85,1) 100%);
+  border-radius: 1.25rem;
+}
+
+
+.menu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sandwich-menu .line {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sandwich-menu.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.sandwich-menu.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.sandwich-menu.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.secondlinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondlinks a{
+  font-family: 'Faustina', serif;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 9rem;
+  height: 3.37rem;
+  background-color: #043E75;
+  margin-top: 2rem;
+  
+  padding-top: 1rem;
+  border-radius: 1.25rem;
+  box-shadow: 4px 4px 4px 4px #a8a7a7;
+
+}
+
+.info img {
+  max-height: 3rem;
+}
+
+.newsletter h2{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+ 
+input[type="email"]{
+  width: 60%;
+  padding: 0;
+  margin-top:.5rem;
+  border-style: none;
+  height: 1.56rem;
+  border-radius: .5rem;
+  
+}
+input[type="submit"]{
+  background-color: #2386E4;
+  border-radius: .3rem;
+  border: none;
+  height:1.56rem;
+  width: 1.56rem;
+  font-size: .7rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+footer{
+  background-color: #043E75;
+  margin-top: 5rem;
+}
+
+
+/* Investors Page */
+
+
+.investheader{
+  margin: 2rem 0;
+width: 100%;
+  
+}
+
+.investorlinks{
+ display: flex;
+ justify-content: center;
+}
+
+.investorlinks a{
+  font-family: 'Faustina', serif;
+  text-decoration: none;
+  display: flex;
+  justify-content:space-around;
+  width: 9rem;
+  height: 3.37rem;
+  background-color: #043E75;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  padding-top: 1rem;
+  border-radius: 1.25rem;
+  box-shadow: .25rem .25rem .25rem .25rem #a8a7a7;
+}
+
+.report img{
+  
+max-width: 256px;
+  box-shadow: .25rem .25rem .25rem .25rem #a8a7a7;
+  border-radius: 1.5rem;
+  
+
+}
+
+.report a{
+  margin: 0;
+  padding: 0;
+}
+.report{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.report h2{
+margin: 4rem 0 1rem 0;
+padding: 0;
+}
+
+
+/* News Page */
+
+
+.newsheader{
+  margin: 2rem 0;
+width: 100%;
+  
+}
+
+.newsreport a{
+  margin: 0;
+  padding: 0;
+}
+.newsreport{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.newsreport h2{
+margin: 2rem 0 1rem 0;
+padding: 0;
+}
+
+.newsreport img{
+  height: 150px;
+ width: 256px;
+    box-shadow: .25rem .25rem .25rem .25rem #a8a7a7;
+    border-radius: 1.5rem;
+}
+
+/* Subsidiaries Page */
+
+
+.subheader{
+  margin: 2rem 0;
+width: 100%;
+max-height: 450px;
+  
+}
+
+.companies{
+  font-family: 'Faustina', serif;
+  background-color: #000;
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 70%;
+  height: inherit;
+  width: 20rem;
+  padding: 1.3rem;
+}
+
+#subs{
+  width: 60%;
+  padding: 0;
+  margin-top:.5rem;
+  border-style: none;
+  height: 1.56rem;
+  border-radius: .5rem;
+}
+
+.sublinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sublinks a{
+  font-family: 'Faustina', serif;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 14.12rem;
+  height: 3.37rem;
+  background-color: #043E75;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-radius: 1.25rem;
+  box-shadow: .25rem .25rem .25rem .25rem #a8a7a7;
+}
+
+
+/* Media Queries */
+@media (min-width: 576px) /* for mobile */{
+
+  header img{
+    max-height: 4rem;
+  }
+
+  .headerpic{
+    width: 100%;
+    max-height: 285px;
+    margin: 2rem 0;
+    }
+
+  .message img {
+
+    max-height: 380px;
+    margin: 2rem 0;
+    border-radius: 1.5rem;
+  }
+
+  
+
+  
+
+}
+@media (min-width:768px) /* for tablets */{
+  .sandwich-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    margin-top: 2.5rem;
+    letter-spacing: .07rem;
+    
+
+    
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  
+
+  .headerpic{
+    width: 100%;
+    max-height: 600px;
+    margin: 2rem 0;
+    }
+
+  .message img {
+
+    max-height: 800px;
+    max-width: 600px;
+    border-radius: 1.5rem;
+  }
+
+  .secondlinks{
+    max-height: 10rem;
+    display:flex;
+   flex-direction:row;
+   flex-wrap: wrap;
+   
+
+   
+
+  }
+
+  .secondlinks a{
+
+    margin-left:6rem;
+      display: inline-block;
+      width: 14.12rem;
+    height: 3.37rem;
+    justify-content:space-evenly;
+    padding-left: 5rem;
+    
+
+  }
+  h2{
+    font-size: 2rem;
+    
+  }
+  input[type="email"]{
+    width: 85%;
+    height: 1.56rem;
+    border-radius: .5rem;
+    
+  }
+  
+  .newsletter h2{
+  
+    font-size: 1.5rem;
+    
+  }
+
+  .investorlinks{
+    display: inline;
+    padding: 0;
+    align-items: center;
+    
+  }
+
+  .linksinvestor{
+    margin-left:10%;
+  }
+
+  .investorlinks a{
+    display: inline-block;
+    width: 14.12rem;
+  height: 3.37rem;
+  justify-content:space-evenly;
+  padding-left: 5rem;
+
+  }
+
+  .newsreport{
+
+    display: flex;
+    flex-direction: row;
+  }
+.newssections{
+  padding: 0;
+  margin: 0;
+}
+ 
+.sublinks{
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+  
+}
+
+
+
+@media (min-width: 992px) /* for laptops */{
+
+  
+    .secondlinks {
+      justify-content: space-evenly;
+     
+    }
+
+    .menu{
+      font-size: larger;
+    }
+
+    
+}
+
+
+@media (min-width: 1440px) /* for desktops */{
+
+}
